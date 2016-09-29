@@ -367,8 +367,8 @@
       </li>
       <li class="tocline"><a class="tocxref" href="#overall"><span class="secno">3. </span>Declarando o idioma geral de uma página</a></li>
       <li class="tocline"><a class="tocxref" href="#indoclang"><span class="secno">4. </span>Identificando alterações de idioma dentros de um documento</a></li>
-      <li class="tocline"><a class="tocxref" href="#langvalues"><span class="secno">5. </span>Choosing language values</a></li>
-      <li class="tocline"><a class="tocxref" href="#metadata"><span class="secno">6. </span>Declaring metadata about the language(s) of the intended audience</a></li>
+      <li class="tocline"><a class="tocxref" href="#langvalues"><span class="secno">5. </span>Escolhendo valores de idioma</a></li>
+      <li class="tocline"><a class="tocxref" href="#metadata"><span class="secno">6. </span>Declarando metadados sobre o(s) idioma(s) da audiência pretendida</a></li>
       <li class="tocline"><a class="tocxref" href="#linkdestination"><span class="secno">7. </span>Indicating the language of a link destination</a></li>
       <li class="tocline"><a class="tocxref" href="#app-c"><span class="secno">A. </span> Revision Log</a></li>
       <li class="tocline"><a class="tocxref" href="#acknowledgements"><span class="secno">B. </span>Acknowledgements</a></li>
@@ -554,7 +554,6 @@
     definindo <code class="kw">Content-Language</code>. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#metadata"
         class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <p>Use atributos de definição de idioma em vez de usar HTTP para declarar o idioma para
-    <p>Use language attributes rather than HTTP to declare the default language for
       o processamento de texto. <a href="https://www.w3.org/International/questions/qa-http-and-lang" class="detail"
         title="Click for explanations and further details.">saiba mais...</a> </p>
     <p>Não declare o idioma padrão do documento no elemento <code class="kw">body</code>,
@@ -601,22 +600,29 @@
   <section rel="bibo:Chapter" resource="#langvalues" typeof="bibo:Chapter" id="langvalues"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_langvalues" role="heading" aria-level="1"><span class="secno">5. </span>Choosing language values</h2>
+    <h2 id="h2_langvalues" role="heading" aria-level="1"><span class="secno">5. </span>Escolhendo valores de idioma</h2>
 
-    <p><span class="link">Use subtags as defined by BCP 47 for language attribute values.</span>      <a href="/International/questions/qa-choosing-language-tags#background" class="detail"
-        title="Click for explanations and further details.">detail </a><span class="link">Use the shortest possible language tag values.</span>      <a href="/International/questions/qa-choosing-language-tags#langsubtag" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">Where possible, use the codes <code class="kw">zh-Hans</code> and <code class="kw">zh-Hant</code> to refer to Simplified and Traditional Chinese, respectively.</span>      <a href="/International/articles/language-tags/Overview.var#script" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">Use the subtag <code class="kw">zxx</code> when the text is known to be not in any language.</span>      <a href="/International/questions/qa-no-language#nonlinguistic" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">If using XML, and the format you are using supports it, use <code>xml:lang=""</code>, otherwise use <code>xml:lang="und"</code> when the language is undetermined <em>and you have to label it</em>.</span>      <a href="/International/questions/qa-no-language#undetermined" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
+    <p><span class="link">Use subtags como definido pelo BCP 47 para valores de atributos idioma.</span>
+    <a href="/International/questions/qa-choosing-language-tags#background" class="detail"
+        title="Click for explanations and further details.">detalhes </a>
+        <span class="link">Use o valor mais curto para tag de idioma.</span>
+        <a href="/International/questions/qa-choosing-language-tags#langsubtag" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Sempre que possível, use os códigos <code class="kw">zh-Hans</code> e
+    <code class="kw">zh-Hant</code> para referenciar Chines Simplificado e Chines Tradicional, respectivamente.</span>
+    <a href="/International/articles/language-tags/Overview.var#script" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Use a subtag <code class="kw">zxx</code> quando um é conhecido que um texto não faz parte de qualquer idioma.</span>      <a href="/International/questions/qa-no-language#nonlinguistic" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Se está usando XML, e o formato que você usa suporta isto, use <code>xml:lang=""</code>,
+    senão use <code>xml:lang="und"</code> quando a linguagem é indeterminada <em>e você deve rotulá-la</em>.</span>
+    <a href="/International/questions/qa-no-language#undetermined" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#langvalues">Choosing language values</a></li>
+        <li><a href="/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="/International/techniques/authoring-html#langvalues">Escolhendo valores de idioma</a></li>
       </ul>
     </div>
   </section>
@@ -624,21 +630,21 @@
   <section rel="bibo:Chapter" resource="#metadata" typeof="bibo:Chapter" id="metadata"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_metadata" role="heading" aria-level="1"><span class="secno">6. </span>Declaring metadata about the language(s) of the
-      intended audience</h2>
+    <h2 id="h2_metadata" role="heading" aria-level="1"><span class="secno">6. </span>Declarando metadados sobre o(s) idioma(s) da
+      audiência pretendida</h2>
 
-    <p>Consider using a <code class="kw">Content-Language</code> HTTP header to declare
-      metadata about the language(s) of the intended audience of a document. <a href="/International/questions/qa-html-language-declarations#metadata"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Where a document contains content aimed at speakers of more than one language,
-      use the HTTP <code class="kw">Content-Language</code> header with a comma-separated
-      list of language tags. <a href="/International/questions/qa-http-and-lang#http"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
+    <p>Considere usar HTTP header <code class="kw">Content-Language</code> para declarar
+      metadados do(s) idioma(s) da audiência pretendida. <a href="/International/questions/qa-html-language-declarations#metadata"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Quando um documento contém conteúdo destinado a falantes de mais de uma língua,
+      use o HTTP header<code class="kw">Content-Language</code> com uma lista separada por vírgulas
+      das tags de idioma. <a href="/International/questions/qa-http-and-lang#http"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#primarylanguage">Declaring metadata about the language(s) of the intended audience</a></li>
+        <li><a href="/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="/International/techniques/authoring-html#primarylanguage">Declarando metadados sobre o(s) idioma(s) da audiência pretendida</a></li>
       </ul>
     </div>
   </section>
