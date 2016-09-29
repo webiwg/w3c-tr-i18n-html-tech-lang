@@ -367,7 +367,7 @@
         <ul class="toc">
           <li class="tocline"><a class="tocxref" href="#ri20040808.101452727"><span class="secno">2.1 </span>O idioma do público-alvo</a></li>
           <li class="tocline"><a class="tocxref" href="#ri20040808.102523274"><span class="secno">2.2 </span>O idioma de processamento de texto</a></li>
-          <li class="tocline"><a class="tocxref" href="#ri20050208.093646470"><span class="secno">2.3 </span>Relationships between language, character encoding and directionality</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20050208.093646470"><span class="secno">2.3 </span>Relações entre idioma, codificação de caracteres e direcionalidade</a></li>
         </ul>
       </li>
       <li class="tocline"><a class="tocxref" href="#overall"><span class="secno">3. </span>Declarando o idioma geral de uma página</a></li>
@@ -505,43 +505,53 @@
 
     <section rel="bibo:Chapter" resource="#ri20050208.093646470" typeof="bibo:Chapter"
       id="ri20050208.093646470">
-      <h3 id="h3_ri20050208.093646470" role="heading" aria-level="2"><span class="secno">2.3 </span>Relationships between language, character encoding
-        and directionality</h3>
-      <p>There are separate mechanisms for declaring character encoding and directionality
-        in HTML, and these ideas should not be confused with mechanisms for declaring
-        language.
+      <h3 id="h3_ri20050208.093646470" role="heading" aria-level="2"><span class="secno">2.3 </span>Relações entre idioma, codificação de caracteres    e direcionalidade</h3>
+      <p>Existem mecanismos separados para declarar codificação de caracteres e direcionalidade
+        em HTML, e essas ideias não devem ser confundidas com mecanismos para a declaração de idioma.
       </p>
-      <p><dfn id="dfn-character-encoding">Character encoding</dfn> refers to the sequences
-        of bytes that are used to represent characters in text. It is important to
-        declare which encoding is being used for your document, but this is a separate
-        issue from declaring language. (To better understand character encoding declarations
-        see <a href="/International/tutorials/tutorial-char-enc/">Handling character encodings in HTML and CSS</a>.)</p>
-      <p>Some people think that information about language can be inferred from the
-        character encoding, but this is not true. There would have to be a one-to-one
-        mapping between encoding and language for this to work, and there isn't.
-        A single character encoding such as ISO 8859-1 (Latin1), could encode both
-        French and English, as well as a great many other languages. In addition,
-        different character encodings can be used for a single language, eg. Arabic
-        could be encoded with 'Windows-1256' or 'ISO 8859-6' or 'UTF-8'.</p>
-      <p>Nowadays, this argument should be moot anyway, because content authors should
-        always use UTF-8 as the character encoding. Since UTF-8 encodings cover all
-        but the rarest of language use with a single encoding, there is normally
-        no need to match language and encoding.</p>
-      <p><dfn id="dfn-text-direction">Text direction</dfn> is another thing that should
-        not be confused with language. In some scripts, such as Arabic and Hebrew,
-        displayed text is read predominantly from right to left, although within
-        that flow, numbers and text from other scripts are displayed from left to
-        right. Markup is needed to set the overall right-to-left context, and in
-        some circumstances markup is needed to correctly render bidirectional text,
-        but this cannot necessarily be done using language markup. (To better understand
-        text direction and markup see <a href="/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>.)</p>
-      <p>As with encodings and language, there is not always a one-to-one mapping between
-        language and script, and therefore directionality. For example, Azerbaijani
-        can be written using both right-to-left and left-to-right scripts, and the
-        language code <code class="keyword">az</code> can be relevant for either.
-        In addition, text direction markup used with inline text applies a range
-        of different values to the text, whereas language is a simple switch that
-        is not up to the tasks required.</p>
+      <p>A <dfn id="dfn-character-encoding">codificação de caracteres</dfn> refere-se às sequências
+        de bytes que são usados para representar caracteres de texto. É importante
+        declarar que a codificação está sendo usado para o documento, mas esta é uma questão separada
+        de declarar idioma. (Para melhor compreender a declaração de codificação de caracteres
+        consulte <a href="/International/tutorials/tutorial-char-enc/">Manipulação de codificação de caracteres em HTML e CSS</a>.)</p>
+      <p>Algumas pessoas pensam que a informação sobre de idioma pode ser inferida a partir da
+        codificação de caracteres, mas isso não é verdade. Teria de haver um mapeamento um-para-um
+        entre codificação e a língua para que isso funcione, e não há.
+        A codificação de caracteres única como a ISO 8859-1 (Latin1), poderia codificar
+        francês and inglês, bem como um grande número de outras línguas. Além disso,
+        diferentes codificações de caracteres podem ser usadas para uma única língua, i.e. árabe
+        poderia ser codificado com 'Windows-1256'' ou 'ISO 8859-6' ou 'UTF-8'.</p>
+      <p>Hoje em dia, este argumento deve ser discutível de qualquer maneira, porque os autores de conteúdo deve
+        sempre usar UTF-8 como a codificação de caracteres. Como codificação UTF-8 abrange todos
+        menos o mais raro de emprego de idiomas com uma única codificação, normalmente não há necessidade
+        de combinar a linguagem e codificação..</p>
+      <p><dfn id="dfn-text-direction">Direção de texto</dfn> é outra coisa que não
+        não deve ser comfundida com idioma. Em algumas escritas, como árabe e hebraico,
+        o texto exibido é lido predominantemente de direita para a esquerda, embora dentro
+        desse fluxo, números e texto a em outras escritas são exibidos da esquerda para a
+        direita. Marcação é necessária para definir o contexto geral da direita para a esquerda, e em
+        algumas circunstâncias marcação é necessária para processar corretamente texto bidirecional,
+        mas isso não pode necessariamente ser feito usando a marcação de idioma. (Para entender melhor
+        direção de texto e marcação veja <a href="/International/tutorials/bidi-xhtml/">Criação de Páginas HTML em Árabe, Hebraico e OutrasOther escritas direita-para-esquerda</a>.)</p>
+
+      <!--
+        N.T: Não tenho certeza se minha proposta de tradução para
+             "In addition, text direction markup used with inline text applies a
+             range of different values to the text, whereas language is a simple
+             switch that is not up to the tasks required." feita para "Além disso,
+             a marcação de direção do texto usada em linha aplica-se uma gama
+             de diferentes valores para o texto, enquanto que a linguagem é um
+             botão de troca simples que não está à altura das tarefas
+             necessárias." ficou tecnicamente correta. (@fititnt, 2016-09-29 13:12)
+      -->
+
+      <p>Tal como acontece com codificações e a língua, nem sempre há um mapeamento um-para-um entre
+        língua e escrita, e, portanto, direcionalidade. Por exemplo, Azerbaijão
+        pode ser escrito usando tanto da escrita direita-para-esquerda e da esquerda-para-direita, e o
+        código de idioma <code class="keyword">az</code> pode ser relevante para qualquer um.
+        Além disso, a marcação de direção do texto usada em linha aplica-se uma gama
+        de diferentes valores para o texto, enquanto que a linguagem é um botão de troca simples que
+        não está à altura das tarefas necessárias.</p>
     </section>
   </section>
 
