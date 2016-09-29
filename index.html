@@ -363,9 +363,9 @@
           <li class="tocline"><a class="tocxref" href="#ri20050208.091505539"><span class="secno">1.3 </span>Por que ler este documento?</a></li>
         </ul>
       </li>
-      <li class="tocline"><a class="tocxref" href="#ri20040808.100519373"><span class="secno">2. </span>Metadata vs.  text-processing</a>
+      <li class="tocline"><a class="tocxref" href="#ri20040808.100519373"><span class="secno">2. </span>Metadados VS processamento de texto</a>
         <ul class="toc">
-          <li class="tocline"><a class="tocxref" href="#ri20040808.101452727"><span class="secno">2.1 </span>The language of the intended audience</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20040808.101452727"><span class="secno">2.1 </span>O idioma do público-alvo</a></li>
           <li class="tocline"><a class="tocxref" href="#ri20040808.102523274"><span class="secno">2.2 </span>The text-processing language</a></li>
           <li class="tocline"><a class="tocxref" href="#ri20050208.093646470"><span class="secno">2.3 </span>Relationships between language, character encoding and directionality</a></li>
         </ul>
@@ -449,41 +449,40 @@
   <section rel="bibo:Chapter" resource="#ri20040808.100519373" typeof="bibo:Chapter"
     id="ri20040808.100519373">
     <!--OddPage-->
-    <h2 id="h2_ri20040808.100519373" role="heading" aria-level="1"><span class="secno">2. </span>Metadata vs. text-processing</h2>
+    <h2 id="h2_ri20040808.100519373" role="heading" aria-level="1"><span class="secno">2. </span>Metadados VS processamento de texto</h2>
 
     <section rel="bibo:Chapter" resource="#ri20040808.101452727" typeof="bibo:Chapter"
       id="ri20040808.101452727">
-      <h3 id="h3_ri20040808.101452727" role="heading" aria-level="2"><span class="secno">2.1 </span>The language of the intended audience</h3>
-      <p>Metadata that describes the language of the intended audience is about <strong>the document as a whole</strong>.
-        Such metadata may be used for searching, serving the right language version,
-        classification, etc. Where there are language changes in a document, information
-        about the language of the intended audience is not specific enough to support
-        <a href="#ri20040808.102523274">text-processing</a>, that is to say, in a
-        way that would be needed for the application of text-to-speech, styling,
-        automatic font assignment, etc.</p>
-      <p>The language of the intended audience does not include every language used
-        in a document. Many documents on the Web contain embedded fragments of content
-        in different languages, whereas the page is clearly aimed at speakers of
-        one particular language. For example, a German city-guide for Beijing may
-        contain useful phrases in Chinese, but it is aimed at a German-speaking audience,
-        not a Chinese one.</p>
-      <p>On the other hand, it is also possible to imagine a situation where a document
-        contains the same or parallel content in more than one language. For example,
-        a Web page may welcome Canadian readers with French content in the left column,
-        and the same content in English in the right-hand column. Here the document
-        is equally targeted at speakers of both languages, so there are two audience
-        languages. This situation is not as common on the Web as in printed material
-        since it is easy to link to separate pages on the Web for different audiences,
-        but it does occur where there are multilingual communities. Another use case
-        is a blog or a news page aimed at a multilingual community, where some articles
-        on a page are in one language and some in another. </p>
-      <p>There are also pages where the navigational information, including the page
-        title, is in one language but the real content of the page is in another.
-        While this is not necessarily good practice, it doesn't change the fact that
-        the language of the intended audience is usually that of the content, regardless
-        of the language at the top of the document source.</p>
-      <p>Metadata about the language of the intended audience is usually best declared
-        outside the document in the HTTP <code class="kw" translate="no">Content-Language</code>        header.
+      <h3 id="h3_ri20040808.101452727" role="heading" aria-level="2"><span class="secno">2.1 </span>O idioma do público-alvo</h3>
+      <p>Metadados que descrevem o idioma do público-alvo é sobre <strong>o documento como um todo</strong>.
+        Esses metadados podem ser utilizados para pesquisa, servindo a versão do idioma correta,
+        classificação, etc. Em caso de alteração de idioma no um documento, informações
+        sobre o idioma do público-alvo não é específico o suficiente para suportar
+        <a href="#ri20040808.102523274">processamento de texto </a>, isto é, de uma
+        maneira que seria necessário para a aplicação do texto-para-voz, estilização,
+        a atribuição automática de fontes, etc.</p>
+      <p>O idioma do público-alvo não incluir todos os idiomas contidos
+        em um documento. Muitos documentos na Web contêm fragmentos de conteúdo
+        em diferentes línguas incorporados, enquanto a página é claramente destinada a falantes de
+        uma língua particular. Por exemplo, uma guia turístico em alemão para cidde de Pequim podem
+        conter frases úteis em chinês, mas é destinado a um público de língua alemã, não a chinesa.</p>
+      <p>Por outro lado, também é possível imaginar uma situação em que um documento
+        contém o mesmo ou paralelamente conteúdo em mais do que uma língua. Por exemplo,
+        uma página da Web pode acolher leitores canadenses com conteúdo em francês na coluna da esquerda,
+        e o mesmo conteúdo em Inglês na coluna da direita. Aqui o documento
+        é igualmente orientado para falantes de ambas as línguas, por isso há dois idiomas de audiência.
+        Esta situação não é tão comum na web como em material impresso,
+        uma vez que é fácil de conectar-se a páginas separadas na Web para públicos diferentes,
+        mas ocorre onde há comunidades multilingues. Outro caso de uso
+        é um blog ou uma página de notícias destinados a uma comunidade multilingue,
+        onde alguns artigos em uma página estão em um idioma e outros de outra. </p>
+      <p>Há também páginas onde as informações de navegação, incluindo o título da página,
+        é em um idioma, mas o conteúdo real da página está em outra.
+        Enquanto isso não é necessariamente uma boa prática, isso não muda o fato de que
+        o idioma do público-alvo é geralmente o do conteúdo,
+        independentemente do idioma no topo da fonte de documento.</p>
+      <p>Metadados sobre o idioma do público-alvo normalmente é melhor declarado
+        fora do documento no cabeçalho HTTP <code class="kw" translate="no">Content-Language</code>.
       </p>
     </section>
     <section rel="bibo:Chapter" resource="#ri20040808.102523274" typeof="bibo:Chapter"
