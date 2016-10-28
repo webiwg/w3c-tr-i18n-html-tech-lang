@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" typeof="bibo:Document w3p:NOTE" about="" property="dcterms:language"
-  content="en">
+<html lang="pt" dir="ltr" typeof="bibo:Document w3p:NOTE" about="" property="dcterms:language"
+  content="pt">
 
 <head>
-  <title>Authoring HTML: Language declarations</title>
+  <title>Criando HTML: declarações de idiomas</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <style>
     /* --- ISSUES/NOTES --- */
@@ -208,6 +208,21 @@
         display: none;
       }
     }
+
+    .alert-rc, .alert-wd {
+      background-color: #fafaae;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 1em auto;
+      border: 2px black dashed;
+    }
+    .alert-wd {
+      border: 5px red dashed;
+    }
+    .alert-rc > .alert-rc-tt, .alert-wd > .alert-wd-tt {
+      font-size: 2em;
+    }
+
   </style>
   <link href="https://www.w3.org/StyleSheets/TR/W3C-WG-NOTE" rel="stylesheet">
   <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
@@ -215,49 +230,68 @@
 
 <body id="respecDocument" role="document" class="h-entry">
   <div id="respecHeader" role="contentinfo" class="head">
+    <div class="alert-wd">
+      <p class="alert-wd-tt">Rascunho de trabalho de tradução</p>
+      Documento em processo de tradução pela <a href="http://www.webiwg.org/">WebIWG</a>. Original em
+      <a href="https://www.w3.org/TR/i18n-html-tech-lang/" lang="en">Authoring HTML: Language declarations</a>
+      </p>
+      <p>
+      Responsáveis: <a href="https://github.com/tassoevan">Tasso Evangelista</a>
+      e <a href="https://github.com/fititnt">Emerson Rocha Luiz</a>. Veja a <a href="https://github.com/webiwg/w3c-rt-i18n-html-tech-lang/pull/4">discussão desta tradução no Github</a>.
+      </p>
+      <p>
+        Veja <a href="http://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2FTR%2Fi18n-html-tech-lang%2F&doc2=http%3A%2F%2Fi18n-html-tech-lang.pt.webiwg.org%2F">diferença entre o original e esta tradução</a>,
+        possivelmente útil para revisão.
+      </p>
+    </div>
     <p>
 
       <a href="http://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></a>
 
     </p>
-    <h1 class="title p-name" id="title" property="dcterms:title">Authoring HTML: Language declarations</h1>
+    <h1 class="title p-name" id="title" property="dcterms:title">Criando HTML: declarações de idiomas</h1>
 
+    <!--
+      NT: Estava "W3C Working Group Note 03 June 2014". Preciso de ajuda para ter certeza se traducao para
+      "Observação de W3C Working Group em 3 de junho de 2014" é a ideal (@fititnt, 2016-09-29 11:24)
+     -->
     <h2 id="w3c-working-group-note-03-june-2014" property="dcterms:issued" datatype="xsd:dateTime"
-      content="2014-06-02T23:00:00.000Z"><abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note <time class="dt-published"
-        datetime="2014-06-03">03 June 2014</time></h2>
+      content="2014-06-02T23:00:00.000Z">Observação de <em lang="en"><abbr title="World Wide Web Consortium">W3C</abbr> Working Group</em> em <time class="dt-published"
+        datetime="2014-06-03">3 de junho de 2014</time></h2>
     <dl>
 
-      <dt>This version:</dt>
+      <dt>Esta versão:</dt>
       <dd><a class="u-url" href="http://www.w3.org/TR/2014/NOTE-i18n-html-tech-lang-20140603/">http://www.w3.org/TR/2014/NOTE-i18n-html-tech-lang-20140603/</a></dd>
-      <dt>Latest published version:</dt>
+      <dt>Última versão publicada:</dt>
       <dd><a href="http://www.w3.org/TR/i18n-html-tech-lang/">http://www.w3.org/TR/i18n-html-tech-lang/</a></dd>
 
-      <dt>Previous version:</dt>
+      <dt>Versão anterior:</dt>
       <dd><a href="http://www.w3.org/TR/2007/NOTE-i18n-html-tech-lang-20070412/">http://www.w3.org/TR/2007/NOTE-i18n-html-tech-lang-20070412/</a></dd>
 
-      <dt>Latest editor's draft:</dt>
+      <dt>Último rascunho do editor:</dt>
       <dd><a href="http://www.w3.org/International/docs/bp-html-lang/">http://www.w3.org/International/docs/bp-html-lang/</a></dd>
 
       <dt>Editor:</dt>
       <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Richard Ishida</span>,
-        <abbr title="World Wide Web Consortium">W3C</abbr></span>
+        <abbr title="World Wide Web Consortium" lang="en">W3C</abbr></span>
       </dd>
 
     </dl>
 
     <p class="copyright">
-      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>      © 2007-2014
+      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright" lang="en">Copyright</a>      © 2007-2014
 
-      <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>      (
-      <a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-      <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+      <a href="http://www.w3.org/" lang="en"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>      (
+      <a href="http://www.csail.mit.edu/" lang="en"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+      <a href="http://www.ercim.eu/" lang="en"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
       <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
-      All Rights Reserved.
+      Todos os direitos reservados.
+      Aplicam-se as regras de
+      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">responsabilidade</a>,
+      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">marca registrada</a>      e
 
-      <abbr title="World Wide Web Consortium">W3C</abbr> <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>      and
-
-      <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>      rules apply.
+      <a href="http://www.w3.org/Consortium/Legal/copyright-documents">uso do documento</a>
+      da <abbr title="World Wide Web Consortium" lang="en">W3C</abbr> .
     </p>
 
     <hr>
@@ -265,281 +299,299 @@
 
   <section rel="bibo:Chapter" resource="#abstract" typeof="bibo:Chapter" datatype=""
     property="dcterms:abstract" class="introductory" id="abstract">
-    <h2 id="h2_abstract" role="heading" aria-level="1">Abstract</h2>
+    <h2 id="h2_abstract" role="heading" aria-level="1">Resumo</h2>
     <p>
-      Specifying the language of content is useful for a wide number of applications, from
-      linguistically-sensitive searching to applying language-specific display properties.
-      In some cases the potential applications for language information are still
-      waiting for implementations to catch up, whereas in others it is a necessity
-      today. Adding markup for language information to content is something that
-      can and should be done as content is first developed. If not, it will be much
-      more difficult to take advantage of any future developments.
+      Especificar a linguagem do conteúdo é útil para uma ampla série de aplicações, de
+      pesquisa linguisticamente sensível a aplicar propriedades de exibição específicas de idioma.
+      Em alguns casos, as aplicações potenciais para informações de idioma ainda estão
+      à espera para implementações para recuperar o atraso, enquanto em outros é uma necessidade
+      hoje. Adição de marcação para informação referente ao idioma para o conteúdo é algo que
+      pode e deve ser feito como o conteúdo é desenvolvido pela primeira vez. Se não, vai ser muito
+      mais difícil de tirar proveito de quaisquer desenvolvimentos futuros.
     </p>
   </section>
   <section rel="bibo:Chapter" resource="#sotd" typeof="bibo:Chapter" id="sotd" class="introductory">
-    <h2 id="h2_sotd" role="heading" aria-level="1">Status of This Document</h2>
+    <h2 id="h2_sotd" role="heading" aria-level="1">Situação deste documento</h2>
 
     <p>
-      <em>This section describes the status of this document at the time of its publication.
-          Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the
-          latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
-          http://www.w3.org/TR/.</em>
+      <em>Esta seção descreve a situação deste documento no momento da sua publicação.
+          Outros documentos podem substituir este documento. A lista das atuais publicações da <abbr title="World Wide Web Consortium" lang="en">W3C</abbr> e a
+          última revisão deste relatório técnico pode ser encontrado no <a href="http://www.w3.org/TR/">índice de relatórios técnicos da <abbr title="World Wide Web Consortium" lang="en">W3C</abbr></a> em http://www.w3.org/TR/</em>.
     </p>
-    This document provides advice on practical techniques related to the creation of
-    content in HTML that is language aware.
+    Este documento fornece conselhos sobre técnicas práticas relacionadas com a criação de
+    conteúdo em HTML que é o idioma acautelado.
     <p>
-      This document was published by the <a href="http://www.w3.org/International/core">Internationalization Working Group</a>      as a Working Group Note. If you wish to make comments regarding this document,
-      please send them to
+      Este documento foi publicado pelo <a href="http://www.w3.org/International/core">Grupo de Trabalho de Internacionalização</a> como uma Nota Grupo de Trabalho.
+      Se você deseja fazer comentários sobre este documento,
+      por favor os envie para
       <a href="mailto:www-international@w3.org">www-international@w3.org</a> (
-      <a href="mailto:www-international-request@w3.org?subject=subscribe">subscribe</a>,
-      <a href="http://lists.w3.org/Archives/Public/www-international/">archives</a>).
-      All comments are welcome.
+      <a href="mailto:www-international-request@w3.org?subject=subscribe">inscrever-se</a>,
+      <a href="http://lists.w3.org/Archives/Public/www-international/">arquivos</a>).
+      Todos os comentários são bem vindos.
 
     </p>
 
-    <p>Publication as a Working Group Note does not imply endorsement by the W3C Membership.
-      This document may be updated, replaced or obsoleted by other documents at any
-      time. Therefore, quotes or references to specific information in the document
-      should include the publication date of this version, 03 June 2014. It is inappropriate
-      to cite this document as other than a Working Group Note, which is not an endorsed
-      W3C Recommendation.</p>
+    <p>A publicação como uma Nota Grupo de Trabalho não implica o endosso pelos Membros do W3C.
+      Este documento pode ser atualizado, substituído ou tornado obsoleto por outros documentos a qualquer
+      momento. Portanto, citações ou referências a informações específicas do documento
+      deve incluir a data de publicação desta versão, 03 de junho de 2014. É inadequado
+      citar este documento como diferente de uma nota do Grupo de Trabalho, que não é uma recomendação aprovada da W3C.</p>
 
     <p>
+      Este documento foi produzido por um grupo que opera sob a
+      <a id="sotd_patent" about="" rel="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">Política de Patendes da
+      <abbr title="World Wide Web Consortium" lang="en">W3C</abbr> de fevereiro de 2004</a>.
 
-      This document was produced by a group operating under the
-      <a id="sotd_patent" about="" rel="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 <abbr title="World Wide Web Consortium">W3C</abbr> Patent
-            Policy</a>.
+      <!--
+        N.T.: Não estou certo da tradução de "An individual who has actual
+              knowledge of a patent which the individual believes contains
+              Essential Claim(s) must disclose the information in accordance
+              with section 6 of the W3C Patent Policy." para
 
-      <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a href="http://www.w3.org/2004/01/pp-impl/32113/status"
-        rel="disclosure">public list of any patent
-              disclosures</a> made in connection with the deliverables of the group;
-      that page also includes instructions for disclosing a patent. An individual
-      who has actual knowledge of a patent which the individual believes contains
-      <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
-            Claim(s)</a> must disclose the information in accordance with
-      <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
-            6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+              Usei como referência a explicação maior em https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential
+              para decidir o que isso significava.
+      -->
 
+      A <abbr title="World Wide Web Consortium" lang="en">W3C</abbr> mantém uma <a href="http://www.w3.org/2004/01/pp-impl/32113/status"
+        rel="disclosure">lista pública de divulgação de patentes</a>
+        feita em conexão com as entregas do grupo;
+      essa página também inclui instruções para a divulgação de uma patente. Uma pessoa
+      que tenha conhecimento que acredite conter
+      <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">"Reivindicações essenciais"</a>
+      deve divulgar as informações de acordo com a <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">seção 6 da Política de Patentes da <abbr title="World Wide Web Consortium" lang="en">W3C</abbr></a>.
     </p>
 
   </section>
   <section id="toc">
-    <h2 id="h2_toc" role="heading" aria-level="1" class="introductory">Table of Contents</h2>
+    <h2 id="h2_toc" role="heading" aria-level="1" class="introductory">Índice</h2>
     <ul id="respecContents" role="directory" class="toc">
-      <li class="tocline"><a class="tocxref" href="#ri20030912.142608197"><span class="secno">1. </span>Introduction</a>
+      <li class="tocline"><a class="tocxref" href="#ri20030912.142608197"><span class="secno">1. </span>Introdução</a>
         <ul class="toc">
-          <li class="tocline"><a class="tocxref" href="#audience"><span class="secno">1.1 </span>Who should use this document?</a></li>
-          <li class="tocline"><a class="tocxref" href="#howtouse"><span class="secno">1.2 </span>How to use this document</a></li>
-          <li class="tocline"><a class="tocxref" href="#ri20050208.091505539"><span class="secno">1.3 </span>Why read this document?</a></li>
+          <li class="tocline"><a class="tocxref" href="#audience"><span class="secno">1.1 </span>Quem deve usar este documento?</a></li>
+          <li class="tocline"><a class="tocxref" href="#howtouse"><span class="secno">1.2 </span>Como usar este documento</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20050208.091505539"><span class="secno">1.3 </span>Por que ler este documento?</a></li>
         </ul>
       </li>
-      <li class="tocline"><a class="tocxref" href="#ri20040808.100519373"><span class="secno">2. </span>Metadata vs.  text-processing</a>
+      <li class="tocline"><a class="tocxref" href="#ri20040808.100519373"><span class="secno">2. </span>Metadados VS processamento de texto</a>
         <ul class="toc">
-          <li class="tocline"><a class="tocxref" href="#ri20040808.101452727"><span class="secno">2.1 </span>The language of the intended audience</a></li>
-          <li class="tocline"><a class="tocxref" href="#ri20040808.102523274"><span class="secno">2.2 </span>The text-processing language</a></li>
-          <li class="tocline"><a class="tocxref" href="#ri20050208.093646470"><span class="secno">2.3 </span>Relationships between language, character encoding and directionality</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20040808.101452727"><span class="secno">2.1 </span>O idioma do público-alvo</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20040808.102523274"><span class="secno">2.2 </span>O idioma de processamento de texto</a></li>
+          <li class="tocline"><a class="tocxref" href="#ri20050208.093646470"><span class="secno">2.3 </span>Relações entre idioma, codificação de caracteres e direcionalidade</a></li>
         </ul>
       </li>
-      <li class="tocline"><a class="tocxref" href="#overall"><span class="secno">3. </span>Declaring the overall language of a page</a></li>
-      <li class="tocline"><a class="tocxref" href="#indoclang"><span class="secno">4. </span>Identifying in-document language changes</a></li>
-      <li class="tocline"><a class="tocxref" href="#langvalues"><span class="secno">5. </span>Choosing language values</a></li>
-      <li class="tocline"><a class="tocxref" href="#metadata"><span class="secno">6. </span>Declaring metadata about the language(s) of the intended audience</a></li>
-      <li class="tocline"><a class="tocxref" href="#linkdestination"><span class="secno">7. </span>Indicating the language of a link destination</a></li>
-      <li class="tocline"><a class="tocxref" href="#app-c"><span class="secno">A. </span> Revision Log</a></li>
-      <li class="tocline"><a class="tocxref" href="#acknowledgements"><span class="secno">B. </span>Acknowledgements</a></li>
+      <li class="tocline"><a class="tocxref" href="#overall"><span class="secno">3. </span>Declarando o idioma geral de uma página</a></li>
+      <li class="tocline"><a class="tocxref" href="#indoclang"><span class="secno">4. </span>Identificando alterações de idioma dentros de um documento</a></li>
+      <li class="tocline"><a class="tocxref" href="#langvalues"><span class="secno">5. </span>Escolhendo valores de idioma</a></li>
+      <li class="tocline"><a class="tocxref" href="#metadata"><span class="secno">6. </span>Declarando metadados sobre o(s) idioma(s) da audiência pretendida</a></li>
+      <li class="tocline"><a class="tocxref" href="#linkdestination"><span class="secno">7. </span>Indicar o idioma de um link de destino</a></li>
+      <li class="tocline"><a class="tocxref" href="#app-c"><span class="secno">A. </span> Acompanhamento de alterações</a></li>
+      <li class="tocline"><a class="tocxref" href="#acknowledgements"><span class="secno">B. </span>Agradecimentos</a></li>
     </ul>
   </section>
 
   <section rel="bibo:Chapter" resource="#ri20030912.142608197" typeof="bibo:Chapter"
     id="ri20030912.142608197">
     <!--OddPage-->
-    <h2 id="h2_ri20030912.142608197" role="heading" aria-level="1"><span class="secno">1. </span>Introduction</h2>
+    <h2 id="h2_ri20030912.142608197" role="heading" aria-level="1"><span class="secno">1. </span>Introdução</h2>
 
     <section rel="bibo:Chapter" resource="#audience" typeof="bibo:Chapter" id="audience">
-      <h3 id="h3_audience" role="heading" aria-level="2"><span class="secno">1.1 </span>Who should use this document?</h3>
-      <p>All authors and producers of HTML and CSS. </p>
-      <p>This document provides guidance for developers of HTML that enables support
-        for international deployment. Enabling international deployment is the responsibility
-        of all content authors, not just localization groups or vendors, and is relevant
-        for all content.
+      <h3 id="h3_audience" role="heading" aria-level="2"><span class="secno">1.1 </span>Quem deve usar este documento?</h3>
+      <p>Todos os autores e produtores de HTML e CSS. </p>
+      <p>Este documento fornece orientação para desenvolvedores de HTML que permite o suporte
+        para a distribuição internacional. Permitir a implantação internacional é a responsabilidade de todos
+         os autores de conteúdo, e não apenas grupos de localização ou vendedores, e é relevante
+         para todo o conteúdo.
         <!--Ignoring the advice in this document, or relegating it to a later phase in the development process, will only add unnecessary costs and resource issues at a later date.-->
       </p>
-      <p>It is assumed that readers of this document are proficient in developing HTML
-        pages – this document provides advice specifically related to internationalization.</p>
+      <p>Supõe-se que os leitores deste documento são proficientes em desenvolvimento de páginas HTML
+        – este documento fornece conselhos especificamente relacionados com a internacionalização.</p>
     </section>
 
     <section rel="bibo:Chapter" resource="#howtouse" typeof="bibo:Chapter" id="howtouse">
-      <h3 id="h3_howtouse" role="heading" aria-level="2"><span class="secno">1.2 </span>How to use this document</h3>
+      <h3 id="h3_howtouse" role="heading" aria-level="2"><span class="secno">1.2 </span>Como usar este documento</h3>
       <div class="note">
-        <div id="h_note_1" role="heading" aria-level="3" class="note-title"><span>Note</span></div>
-        <div class="">If you don't know much about using language in HTML, you may find it useful
-          to familiarise yourself with the concepts introduced in the tutorial
-          <a href="/International/tutorials/language-decl/">Working with language in HTML</a>.
-          That tutorial will help you understand the essential aspects of how to
-          work with language information when authoring HTML and CSS.</div>
+        <div id="h_note_1" role="heading" aria-level="3" class="note-title"><span>Observação</span></div>
+        <div class="">Se você não sabe muito sobre o uso de idioma em HTML, você pode achar útil
+          se familiarizar com os conceitos introduzidos no tutorial
+          <a href="https://www.w3.org/International/tutorials/language-decl/">Trabalhando com idioma em HTML</a>.
+          Esse tutorial irá ajudá-lo a compreender os aspectos essenciais de como
+          trabalhar com informações de idioma durante a criação HTML e CSS.</div>
       </div>
-      <p>This document lists a number of <span class="new-term">do's and don'ts</span>,
-        which we will refer to as techniques, related to authoring pages with language
-        information. Each technique is followed by a 'more...' link which points
-        to an article or page that gives further details and explanations. You can
-        find additional information by following the links after each section, which
-        point to sections of the <a href="http://www.w3.org/International/technique-index">technique index</a>.</p>
-      <p>If a technique says 'consider', there are usually pros and cons involved in
-        following the advice given, and you should follow the link to more detailed
-        information to be sure you understand these. In some cases it may be that
-        not all browsers support the features described. In other cases, it may be
-        purely up to you to decide whether or not this is a good idea.</p>
+      <p>Este documento enumera uma série de <span class="new-term">o que fazer e o que não fazer</span>,
+        que iremos referir como técnicas, relacionadas com a criação de páginas com informações sobre o idioma.
+        Cada técnica é seguido por um link "saiba mais ...", que aponta
+        a um artigo ou página que dá mais detalhes e explicações. Você pode
+        encontrar informações adicionais, seguindo os links depois de cada seção, que
+        apontam para seções do <a href="http://www.w3.org/International/technique-index">índice de técnicas</a>.</p>
+      <p>Se uma técnica diz "considere", geralmente há prós e contras envolvidos na
+        ao seguir o conselho dado, e você deve seguir o link para informações mais detalhadas
+        para certifique-se entende-los. Em alguns casos, pode ser que
+        nem todos os navegadores suportam as características descritas. Em outros casos, pode ser
+        meramente a você a decidir se esta é ou não uma boa idéia.</p>
     </section>
 
     <section rel="bibo:Chapter" resource="#ri20050208.091505539" typeof="bibo:Chapter"
       id="ri20050208.091505539">
-      <h3 id="h3_ri20050208.091505539" role="heading" aria-level="2"><span class="secno">1.3 </span>Why read this document?</h3>
-      <p>Applications already exist that can use information about the <strong>natural language</strong>        (ie. the human, non-programmatic language) of content to deliver to users
-        the most relevant information or styling. The more content is tagged, and
-        tagged correctly, the more useful and pervasive such applications will become.</p>
-      <p>Language information is useful for things such as authoring tools, translation
-        tools, accessibility, font selection, page rendering, search, and scripting.</p>
-      <p>These applications can't work, however, if the information about the language
-        of the text is not available. Language information should therefore be specified
-        for the page as a whole, and wherever language changes within the page.</p>
-      <p>In the future there will be other applications for language information, driven
-        by developments in technology. For example, implementations of the CSS3
-        <code class="kw">:first-letter</code> pseudo-element will need language information
-        to apply correct styling. However, we are currently faced with a circular
-        problem. People who don't see the application of language information do
-        not provide information about their content, and language-related applications
-        are slow to be deployed until this information is widely available. This
-        cycle can be broken by content authors taking steps now to declare language
-        information. This is usually very easy to do, and carries no penalties.</p>
+      <h3 id="h3_ri20050208.091505539" role="heading" aria-level="2"><span class="secno">1.3 </span>Por que ler este documento?</h3>
+      <p>Aplicações já existentes que podem usar informações sobre a <strong>linguagem natural</strong>        (i.e, a humana,
+        a linguagem não-programática) de conteúdos para entregar aos usuários
+        as informações ou estilos mais relevante. Quanto mais conteúdo é etiquetado, e
+        etiquetado corretamente, mais útil e universal tal utilização se tornará.</p>
+      <p>Informações de idioma é útil para coisas como ferramentas de criação, ferramentas de tradução,
+        <!-- NT: traduzo como 'scripting'? (@fititnt, 2016-09-28 21:19) -->
+        acessibilidade, escolha de fonte, renderização de página, busca e <em lang="en">scripting</em>.</p>
+      <p>Estas aplicações não trabalham, no entanto, se a informação sobre o idioma
+        do texto não está disponível. informações de idioma deve ser especificado
+        para a página como um todo, e onde quer que as alterações de idioma dentro da página.</p>
+      <p>No futuro, haverá outras aplicações para informação referente ao idioma, impulsionado
+        por desenvolvimentos em tecnologia. Por exemplo, as implementações do pseudo-elemento de CSS3
+        <code class="kw">:first-letter</code> precisará saber o idioma
+        para aplicar estilização adequada. No entanto, estamos atualmente confrontados com um problema circular.
+        Pessoas que não vêem a aplicação da informação referente ao idioma
+        não fornecem informações sobre seu conteúdo e aplicações relacionadas com as línguas
+        são lentas para ser implantadas até que esta informação estar amplamente disponível. Este
+        ciclo pode ser quebrado por autores de conteúdo que tomam medidas agora para declarar informação referente ao idioma.
+        Isso geralmente é muito fácil de fazer, e carrega nenhuma penalidade.</p>
     </section>
   </section>
 
   <section rel="bibo:Chapter" resource="#ri20040808.100519373" typeof="bibo:Chapter"
     id="ri20040808.100519373">
     <!--OddPage-->
-    <h2 id="h2_ri20040808.100519373" role="heading" aria-level="1"><span class="secno">2. </span>Metadata vs. text-processing</h2>
+    <h2 id="h2_ri20040808.100519373" role="heading" aria-level="1"><span class="secno">2. </span>Metadados VS processamento de texto</h2>
 
     <section rel="bibo:Chapter" resource="#ri20040808.101452727" typeof="bibo:Chapter"
       id="ri20040808.101452727">
-      <h3 id="h3_ri20040808.101452727" role="heading" aria-level="2"><span class="secno">2.1 </span>The language of the intended audience</h3>
-      <p>Metadata that describes the language of the intended audience is about <strong>the document as a whole</strong>.
-        Such metadata may be used for searching, serving the right language version,
-        classification, etc. Where there are language changes in a document, information
-        about the language of the intended audience is not specific enough to support
-        <a href="#ri20040808.102523274">text-processing</a>, that is to say, in a
-        way that would be needed for the application of text-to-speech, styling,
-        automatic font assignment, etc.</p>
-      <p>The language of the intended audience does not include every language used
-        in a document. Many documents on the Web contain embedded fragments of content
-        in different languages, whereas the page is clearly aimed at speakers of
-        one particular language. For example, a German city-guide for Beijing may
-        contain useful phrases in Chinese, but it is aimed at a German-speaking audience,
-        not a Chinese one.</p>
-      <p>On the other hand, it is also possible to imagine a situation where a document
-        contains the same or parallel content in more than one language. For example,
-        a Web page may welcome Canadian readers with French content in the left column,
-        and the same content in English in the right-hand column. Here the document
-        is equally targeted at speakers of both languages, so there are two audience
-        languages. This situation is not as common on the Web as in printed material
-        since it is easy to link to separate pages on the Web for different audiences,
-        but it does occur where there are multilingual communities. Another use case
-        is a blog or a news page aimed at a multilingual community, where some articles
-        on a page are in one language and some in another. </p>
-      <p>There are also pages where the navigational information, including the page
-        title, is in one language but the real content of the page is in another.
-        While this is not necessarily good practice, it doesn't change the fact that
-        the language of the intended audience is usually that of the content, regardless
-        of the language at the top of the document source.</p>
-      <p>Metadata about the language of the intended audience is usually best declared
-        outside the document in the HTTP <code class="kw" translate="no">Content-Language</code>        header.
+      <h3 id="h3_ri20040808.101452727" role="heading" aria-level="2"><span class="secno">2.1 </span>O idioma do público-alvo</h3>
+      <p>Metadados que descrevem o idioma do público-alvo é sobre <strong>o documento como um todo</strong>.
+        Esses metadados podem ser utilizados para pesquisa, servindo a versão do idioma correta,
+        classificação, etc. Em caso de alteração de idioma no um documento, informações
+        sobre o idioma do público-alvo não é específico o suficiente para suportar
+        <a href="#ri20040808.102523274">processamento de texto </a>, isto é, de uma
+        maneira que seria necessário para a aplicação do texto-para-voz, estilização,
+        a atribuição automática de fontes, etc.</p>
+      <p>O idioma do público-alvo não incluir todos os idiomas contidos
+        em um documento. Muitos documentos na Web contêm fragmentos de conteúdo
+        em diferentes línguas incorporados, enquanto a página é claramente destinada a falantes de
+        uma língua particular. Por exemplo, uma guia turístico em alemão para cidde de Pequim podem
+        conter frases úteis em chinês, mas é destinado a um público de língua alemã, não a chinesa.</p>
+      <p>Por outro lado, também é possível imaginar uma situação em que um documento
+        contém o mesmo ou paralelamente conteúdo em mais do que uma língua. Por exemplo,
+        uma página da Web pode acolher leitores canadenses com conteúdo em francês na coluna da esquerda,
+        e o mesmo conteúdo em Inglês na coluna da direita. Aqui o documento
+        é igualmente orientado para falantes de ambas as línguas, por isso há dois idiomas de audiência.
+        Esta situação não é tão comum na web como em material impresso,
+        uma vez que é fácil de conectar-se a páginas separadas na Web para públicos diferentes,
+        mas ocorre onde há comunidades multilingues. Outro caso de uso
+        é um blog ou uma página de notícias destinados a uma comunidade multilingue,
+        onde alguns artigos em uma página estão em um idioma e outros de outra. </p>
+      <p>Há também páginas onde as informações de navegação, incluindo o título da página,
+        é em um idioma, mas o conteúdo real da página está em outra.
+        Enquanto isso não é necessariamente uma boa prática, isso não muda o fato de que
+        o idioma do público-alvo é geralmente o do conteúdo,
+        independentemente do idioma no topo da fonte de documento.</p>
+      <p>Metadados sobre o idioma do público-alvo normalmente é melhor declarado
+        fora do documento no cabeçalho HTTP <code class="kw" translate="no">Content-Language</code>.
       </p>
     </section>
     <section rel="bibo:Chapter" resource="#ri20040808.102523274" typeof="bibo:Chapter"
       id="ri20040808.102523274">
-      <h3 id="h3_ri20040808.102523274" role="heading" aria-level="2"><span class="secno">2.2 </span>The text-processing language</h3>
-      <p>When specifying the text-processing language you are declaring the language
-        in which <strong>a specific range of text is actually written</strong>, so
-        that user agents or applications that manipulate the text, such as voice
-        browsers, spell checkers, or style processors can effectively handle the
-        text in question. So we are, by necessity, talking about associating a <em>single</em>        language with a <em>specific</em> range of text.</p>
-      <p>This specificity distinguishes the declaration of the language for text-processing
-        from <a href="#ri20040808.101452727">the language of the intended audience</a>.</p>
-      <p>The language for text-processing is usually best declared using attributes
-        on elements, including the <code class="kw">html</code> element, which contains
-        all the content of the document. Enclosed elements inherit the declared value,
-        but you can, of course, override an initial declaration by specifying a different
-        language on embedded elements where the language changes, eg. a French phrase
-        in an English paragraph.</p>
+      <h3 id="h3_ri20040808.102523274" role="heading" aria-level="2"><span class="secno">2.2 </span>O idioma de processamento de texto</h3>
+      <p>Ao especificar a linguagem de processamento de texto que você está declarando o idioma
+        no qual <strong>uma gama específica de texto é escrito</strong>, de modo que
+        os agentes do usuário ou aplicações que manipulam o texto, como navegadores de voz,
+        verificadores ortográficos, ou processadores de estilo pode efetivamente lidar com o
+        texto em questão. Portanto, estamos, por necessidade, falando sobre como associar <em>um único</em> idioma com um intervalo <em>específico</em> de texto.</p>
+      <p>Esta especificidade distingue a declaração do idioma para texto de processamento
+        do <a href="#ri20040808.101452727">idioma do público-alvo</a>.</p>
+      <p>O idioma para o processamento de texto é normalmente melhor declarado usando atributos
+        em elementos, incluindo o elemento <code class="kw">html</code>, que contém todo o conteúdo do documento.
+        Elementos incluídos herdam o valor declarado,
+        mas você pode, é claro, substituir uma declaração inicial, especificando um idioma diferente
+        em elementos incorporados, onde as alterações de idioma, por exemplo, uma frase francesa
+        em um parágrafo em inglês.</p>
     </section>
 
     <section rel="bibo:Chapter" resource="#ri20050208.093646470" typeof="bibo:Chapter"
       id="ri20050208.093646470">
-      <h3 id="h3_ri20050208.093646470" role="heading" aria-level="2"><span class="secno">2.3 </span>Relationships between language, character encoding
-        and directionality</h3>
-      <p>There are separate mechanisms for declaring character encoding and directionality
-        in HTML, and these ideas should not be confused with mechanisms for declaring
-        language.
+      <h3 id="h3_ri20050208.093646470" role="heading" aria-level="2"><span class="secno">2.3 </span>Relações entre idioma, codificação de caracteres    e direcionalidade</h3>
+      <p>Existem mecanismos separados para declarar codificação de caracteres e direcionalidade
+        em HTML, e essas ideias não devem ser confundidas com mecanismos para a declaração de idioma.
       </p>
-      <p><dfn id="dfn-character-encoding">Character encoding</dfn> refers to the sequences
-        of bytes that are used to represent characters in text. It is important to
-        declare which encoding is being used for your document, but this is a separate
-        issue from declaring language. (To better understand character encoding declarations
-        see <a href="/International/tutorials/tutorial-char-enc/">Handling character encodings in HTML and CSS</a>.)</p>
-      <p>Some people think that information about language can be inferred from the
-        character encoding, but this is not true. There would have to be a one-to-one
-        mapping between encoding and language for this to work, and there isn't.
-        A single character encoding such as ISO 8859-1 (Latin1), could encode both
-        French and English, as well as a great many other languages. In addition,
-        different character encodings can be used for a single language, eg. Arabic
-        could be encoded with 'Windows-1256' or 'ISO 8859-6' or 'UTF-8'.</p>
-      <p>Nowadays, this argument should be moot anyway, because content authors should
-        always use UTF-8 as the character encoding. Since UTF-8 encodings cover all
-        but the rarest of language use with a single encoding, there is normally
-        no need to match language and encoding.</p>
-      <p><dfn id="dfn-text-direction">Text direction</dfn> is another thing that should
-        not be confused with language. In some scripts, such as Arabic and Hebrew,
-        displayed text is read predominantly from right to left, although within
-        that flow, numbers and text from other scripts are displayed from left to
-        right. Markup is needed to set the overall right-to-left context, and in
-        some circumstances markup is needed to correctly render bidirectional text,
-        but this cannot necessarily be done using language markup. (To better understand
-        text direction and markup see <a href="/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>.)</p>
-      <p>As with encodings and language, there is not always a one-to-one mapping between
-        language and script, and therefore directionality. For example, Azerbaijani
-        can be written using both right-to-left and left-to-right scripts, and the
-        language code <code class="keyword">az</code> can be relevant for either.
-        In addition, text direction markup used with inline text applies a range
-        of different values to the text, whereas language is a simple switch that
-        is not up to the tasks required.</p>
+      <p>A <dfn id="dfn-character-encoding">codificação de caracteres</dfn> refere-se às sequências
+        de bytes que são usados para representar caracteres de texto. É importante
+        declarar que a codificação está sendo usado para o documento, mas esta é uma questão separada
+        de declarar idioma. (Para melhor compreender a declaração de codificação de caracteres
+        consulte <a href="https://www.w3.org/International/tutorials/tutorial-char-enc/">Manipulação de codificação de caracteres em HTML e CSS</a>.)</p>
+      <p>Algumas pessoas pensam que a informação sobre de idioma pode ser inferida a partir da
+        codificação de caracteres, mas isso não é verdade. Teria de haver um mapeamento um-para-um
+        entre codificação e a língua para que isso funcione, e não há.
+        A codificação de caracteres única como a ISO 8859-1 (Latin1), poderia codificar
+        francês and inglês, bem como um grande número de outras línguas. Além disso,
+        diferentes codificações de caracteres podem ser usadas para uma única língua, i.e. árabe
+        poderia ser codificado com 'Windows-1256'' ou 'ISO 8859-6' ou 'UTF-8'.</p>
+      <p>Hoje em dia, este argumento deve ser discutível de qualquer maneira, porque os autores de conteúdo deve
+        sempre usar UTF-8 como a codificação de caracteres. Como codificação UTF-8 abrange todos
+        menos o mais raro de emprego de idiomas com uma única codificação, normalmente não há necessidade
+        de combinar a linguagem e codificação..</p>
+      <p><dfn id="dfn-text-direction">Direção de texto</dfn> é outra coisa que não
+        não deve ser comfundida com idioma. Em algumas escritas, como árabe e hebraico,
+        o texto exibido é lido predominantemente de direita para a esquerda, embora dentro
+        desse fluxo, números e texto a em outras escritas são exibidos da esquerda para a
+        direita. Marcação é necessária para definir o contexto geral da direita para a esquerda, e em
+        algumas circunstâncias marcação é necessária para processar corretamente texto bidirecional,
+        mas isso não pode necessariamente ser feito usando a marcação de idioma. (Para entender melhor
+        direção de texto e marcação veja <a href="https://www.w3.org/International/tutorials/bidi-xhtml/">Criação de Páginas HTML em Árabe, Hebraico e Outras escritas direita-para-esquerda</a>.)</p>
+
+      <!--
+        N.T: Não tenho certeza se minha proposta de tradução para
+             "In addition, text direction markup used with inline text applies a
+             range of different values to the text, whereas language is a simple
+             switch that is not up to the tasks required." feita para "Além disso,
+             a marcação de direção do texto usada em linha aplica-se uma gama
+             de diferentes valores para o texto, enquanto que a linguagem é um
+             botão de troca simples que não está à altura das tarefas
+             necessárias." ficou tecnicamente correta. (@fititnt, 2016-09-29 13:12)
+      -->
+
+      <p>Tal como acontece com codificações e a língua, nem sempre há um mapeamento um-para-um entre
+        língua e escrita, e, portanto, direcionalidade. Por exemplo, Azerbaijão
+        pode ser escrito usando tanto da escrita direita-para-esquerda e da esquerda-para-direita, e o
+        código de idioma <code class="keyword">az</code> pode ser relevante para qualquer um.
+        Além disso, a marcação de direção do texto usada em linha aplica-se uma gama
+        de diferentes valores para o texto, enquanto que a linguagem é um botão de troca simples que
+        não está à altura das tarefas necessárias.</p>
     </section>
   </section>
 
   <section rel="bibo:Chapter" resource="#overall" typeof="bibo:Chapter" id="overall"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_overall" role="heading" aria-level="1"><span class="secno">3. </span>Declaring the overall language of a page</h2>
+    <h2 id="h2_overall" role="heading" aria-level="1"><span class="secno">3. </span>Declarando o idioma geral de uma página</h2>
 
-    <p>Always declare the default language for text in the page using attributes on
-      the <code class="kw">html</code> tag, unless the document contains content
-      aimed at speakers of more than one language. <a href="/International/questions/qa-html-language-declarations#basics"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Do NOT use the <code class="kw">meta</code> element with the <code class="kw">content</code>      attribute set to <code class="kw">Content-Language</code>. <a href="/International/questions/qa-html-language-declarations#metadata"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Use language attributes rather than HTTP to declare the default language for
-      text processing. <a href="/International/questions/qa-http-and-lang" class="detail"
-        title="Click for explanations and further details.">more...</a> </p>
-    <p>Do not declare the default language of a document in the <code class="kw">body</code>      element, use the <code class="kw">html</code> element. <a href="/International/questions/qa-html-language-declarations#basics"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Use the <code class="kw" translate="no">lang</code> attribute for pages served
-      as HTML, and the <code class="kw" translate="no">xml:lang</code> attribute
-      for pages served as XML. For XHTML 1.x and HTML5 polyglot documents, use both
-      together. <a href="/International/questions/qa-html-language-declarations#attributes"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
+    <p>Sempre declare o idioma padrão para o texto na página usando atributos
+      na tag <code class="kw">html</code>, a menos que o documento contém conteúdo
+       destinado a falantes de mais de uma língua. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#basics"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>NÃO use o elemento <code class="kw">meta</code> com atributo <code class="kw">content</code>
+    definindo <code class="kw">Content-Language</code>. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#metadata"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Use atributos de definição de idioma em vez de usar HTTP para declarar o idioma para
+      o processamento de texto. <a href="https://www.w3.org/International/questions/qa-http-and-lang" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a> </p>
+    <p>Não declare o idioma padrão do documento no elemento <code class="kw">body</code>,
+    use o elemento <code class="kw">html</code>. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#basics"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Use o atributo <code class="kw" translate="no">lang</code> para páginas servidas
+      como HTML, e o atributo <code class="kw" translate="no">xml:lang</code>
+      para páginas servidas como XML. Para documentos poliglotasXHTML 1.x e HTML5, use ambas
+      juntas. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#attributes"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#textprocessing">Declaring the overall language of a page</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#textprocessing">Declarando o idioma geral de uma página</a></li>
       </ul>
     </div>
   </section>
@@ -547,23 +599,23 @@
   <section rel="bibo:Chapter" resource="#indoclang" typeof="bibo:Chapter" id="indoclang"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_indoclang" role="heading" aria-level="1"><span class="secno">4. </span>Identifying in-document language changes</h2>
+    <h2 id="h2_indoclang" role="heading" aria-level="1"><span class="secno">4. </span>Identificando alterações de idioma dentros de um documento</h2>
 
-    <p>Use the <code class="kw">lang</code> and/or <code class="kw">xml:lang</code>      attributes around text to indicate any changes in language. <a href="/International/questions/qa-html-language-declarations#basics"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Use the <code class="kw" translate="no">lang</code> attribute for pages served
-      as HTML, and the <code class="kw" translate="no">xml:lang</code> attribute
-      for pages served as XML. For XHTML 1.x and HTML5 polyglot documents, use both
-      together. <a href="/International/questions/qa-html-language-declarations#attributes"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>If the text in attribute values and element content is in different languages,
-      consider using a nested approach. <a href="/International/questions/qa-html-language-declarations/#contentvsattribute"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
+    <p>Use os atributos <code class="kw">lang</code> e/ou <code class="kw">xml:lang</code> em volta do texto para indicar qualquer alteração no idioma. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#basics"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Use o atributo <code class="kw" translate="no">lang</code> para páginas servidas
+      como HTML, e o atributo <code class="kw" translate="no">xml:lang</code>
+      para páginas servidas como XML. Para documentos poliglotas XHTML 1.x e HTML5, use ambas
+      juntas. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#attributes"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Se o texto nos atributos e no conteúdo do elemento é em idiomas diferentes,
+      considerar o uso de uma abordagem aninhada. <a href="https://www.w3.org/International/questions/qa-html-language-declarations/#contentvsattribute"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#indoclang">Identifying in-document language changes</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#indoclang">Identificando alterações de idioma dentros de um documento</a></li>
       </ul>
     </div>
   </section>
@@ -571,22 +623,29 @@
   <section rel="bibo:Chapter" resource="#langvalues" typeof="bibo:Chapter" id="langvalues"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_langvalues" role="heading" aria-level="1"><span class="secno">5. </span>Choosing language values</h2>
+    <h2 id="h2_langvalues" role="heading" aria-level="1"><span class="secno">5. </span>Escolhendo valores de idioma</h2>
 
-    <p><span class="link">Use subtags as defined by BCP 47 for language attribute values.</span>      <a href="/International/questions/qa-choosing-language-tags#background" class="detail"
-        title="Click for explanations and further details.">detail </a><span class="link">Use the shortest possible language tag values.</span>      <a href="/International/questions/qa-choosing-language-tags#langsubtag" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">Where possible, use the codes <code class="kw">zh-Hans</code> and <code class="kw">zh-Hant</code> to refer to Simplified and Traditional Chinese, respectively.</span>      <a href="/International/articles/language-tags/Overview.var#script" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">Use the subtag <code class="kw">zxx</code> when the text is known to be not in any language.</span>      <a href="/International/questions/qa-no-language#nonlinguistic" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
-    <p><span class="link">If using XML, and the format you are using supports it, use <code>xml:lang=""</code>, otherwise use <code>xml:lang="und"</code> when the language is undetermined <em>and you have to label it</em>.</span>      <a href="/International/questions/qa-no-language#undetermined" class="detail"
-        title="Click for explanations and further details.">more...</a></p>
+    <p><span class="link">Use subtags como definido pelo BCP 47 para valores de atributos idioma.</span>
+    <a href="https://www.w3.org/International/questions/qa-choosing-language-tags#background" class="detail"
+        title="Click for explanations and further details.">detalhes </a>
+        <span class="link">Use o valor mais curto para tag de idioma.</span>
+        <a href="https://www.w3.org/International/questions/qa-choosing-language-tags#langsubtag" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Sempre que possível, use os códigos <code class="kw">zh-Hans</code> e
+    <code class="kw">zh-Hant</code> para referenciar Chines Simplificado e Chines Tradicional, respectivamente.</span>
+    <a href="https://www.w3.org/International/articles/language-tags/Overview.var#script" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Use a subtag <code class="kw">zxx</code> quando um é conhecido que um texto não faz parte de qualquer idioma.</span>      <a href="https://www.w3.org/International/questions/qa-no-language#nonlinguistic" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
+    <p><span class="link">Se está usando XML, e o formato que você usa suporta isto, use <code>xml:lang=""</code>,
+    senão use <code>xml:lang="und"</code> quando a linguagem é indeterminada <em>e você deve rotulá-la</em>.</span>
+    <a href="https://www.w3.org/International/questions/qa-no-language#undetermined" class="detail"
+        title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#langvalues">Choosing language values</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#langvalues">Escolhendo valores de idioma</a></li>
       </ul>
     </div>
   </section>
@@ -594,21 +653,21 @@
   <section rel="bibo:Chapter" resource="#metadata" typeof="bibo:Chapter" id="metadata"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_metadata" role="heading" aria-level="1"><span class="secno">6. </span>Declaring metadata about the language(s) of the
-      intended audience</h2>
+    <h2 id="h2_metadata" role="heading" aria-level="1"><span class="secno">6. </span>Declarando metadados sobre o(s) idioma(s) da
+      audiência pretendida</h2>
 
-    <p>Consider using a <code class="kw">Content-Language</code> HTTP header to declare
-      metadata about the language(s) of the intended audience of a document. <a href="/International/questions/qa-html-language-declarations#metadata"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Where a document contains content aimed at speakers of more than one language,
-      use the HTTP <code class="kw">Content-Language</code> header with a comma-separated
-      list of language tags. <a href="/International/questions/qa-http-and-lang#http"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
+    <p>Considere usar HTTP header <code class="kw">Content-Language</code> para declarar
+      metadados do(s) idioma(s) da audiência pretendida. <a href="https://www.w3.org/International/questions/qa-html-language-declarations#metadata"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Quando um documento contém conteúdo destinado a falantes de mais de uma língua,
+      use o HTTP header<code class="kw">Content-Language</code> com uma lista separada por vírgulas
+      das tags de idioma. <a href="https://www.w3.org/International/questions/qa-http-and-lang#http"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#primarylanguage">Declaring metadata about the language(s) of the intended audience</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#primarylanguage">Declarando metadados sobre o(s) idioma(s) da audiência pretendida</a></li>
       </ul>
     </div>
   </section>
@@ -616,20 +675,22 @@
   <section rel="bibo:Chapter" resource="#linkdestination" typeof="bibo:Chapter" id="linkdestination"
     class="techniques">
     <!--OddPage-->
-    <h2 id="h2_linkdestination" role="heading" aria-level="1"><span class="secno">7. </span>Indicating the language of a link destination</h2>
-    <p>When pointing to a resource in another language, consider the pros and cons before
-      indicating the language of the target document. <a href="/International/questions/qa-link-lang#proscons"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>If you want to indicate that the target document of an <code class="kw" translate="no">a</code>      element is in another language, consider the pros and cons before using
-      <code class="kw" translate="no">hreflang</code> with CSS. <a href="/International/questions/qa-link-lang#hreflang"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
-    <p>Do not use flag icons to indicate languages. <a href="/International/questions/qa-link-lang#flags"
-        class="detail" title="Click for explanations and further details.">more...</a></p>
+    <h2 id="h2_linkdestination" role="heading" aria-level="1"><span class="secno">7. </span>Indicar o idioma de um link de destino</h2>
+    <p>Ao apontar para um recurso em outro idioma, considere os prós e contras antes
+      de indicar o idioma do documento de destino.
+      <a href="https://www.w3.org/International/questions/qa-link-lang#proscons"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Se você quiser indicar que o documento de destino de um elemento <code class="kw" translate="no">a</code>
+    está em outro idioma, considere os prós e contras antes de usar
+      <code class="kw" translate="no">hreflang</code> com CSS. <a href="https://www.w3.org/International/questions/qa-link-lang#hreflang"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
+    <p>Não use icones de bandeiras para indicar idiomas <a href="https://www.w3.org/International/questions/qa-link-lang#flags"
+        class="detail" title="Click for explanations and further details.">saiba mais...</a></p>
     <div class="technique-links">
-      <p>Learn more about:</p>
+      <p>Leia mais a respeito:</p>
       <ul>
-        <li><a href="/International/techniques/authoring-html#language">Language</a></li>
-        <li><a href="/International/techniques/authoring-html#linkdestination">Indicating the language of a link destination</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#language">Idioma</a></li>
+        <li><a href="https://www.w3.org/International/techniques/authoring-html#linkdestination">Indicar o idioma de um link de destino</a></li>
       </ul>
     </div>
   </section>
@@ -637,28 +698,28 @@
   <section rel="bibo:Chapter" resource="#app-c" typeof="bibo:Chapter" class="appendix"
     id="app-c">
     <!--OddPage-->
-    <h2 id="h2_app-c" role="heading" aria-level="1"><span class="secno">A. </span> Revision Log</h2>
-    <p>This version introduces the following changes:</p>
+    <h2 id="h2_app-c" role="heading" aria-level="1"><span class="secno">A. </span> Acompanhamento de alterações</h2>
+    <p>Esta versão apresenta as seguintes alterações:</p>
     <ul>
-      <li>All detailed content from sections 4 to 9 has been removed, to leave only the
-        summary do's and don'ts text.</li>
-      <li>The section "Authoring with localization in mind" has been removed altogether.</li>
-      <li>The section in the introductory material, "Places where language information
-        may appear" has been removed.</li>
-      <li>All do's and don'ts have been revised to incorporate recent changes, esp. related
-        to HTML5.</li>
-      <li>Some editorial changes were made to sections 1 to 3. The section "How to use
-        this document" has been changed to reflect the new composition of the document.</li>
-      <li>The document was recreated as an HTML5 page, and is now authored using respec,
-        and the styles have been changed.</li>
+      <li>Todo conteúdo detalhado nas seções 4 a 9 foram removidos, para deixar apenas
+        o texto do sumário do que fazer e o que não fazer</li>
+      <li>O sessão "Criando com localização em mente" foi removida completamente.</li>
+      <li>A seção no material introdutório, "Lugares onde informações de idioma
+        podem aparecer" foi removida.</li>
+      <li>Todos os faça e não faça foram revisados para incorporar mudanças recentes em especial relacionadas
+        ao HTML5.</li>
+      <li>Algumas mudanças editoriais foram feitas para as secções 1 a 3. A seção "Como usar
+        este documento" foi alterada para refletir o novo conteúdo do documento.</li>
+      <li>O documento foi criado como uma página HTML5, e agora é criado usando respec,
+        e os estilos foram alterados.</li>
     </ul>
   </section>
 
   <section id="acknowledgements" class="appendix">
     <!--OddPage-->
-    <h2 id="h2_acknowledgements" role="heading" aria-level="1"><span class="secno">B. </span>Acknowledgements</h2>
-    <p>Members of the Internationalization Working Group and former GEO Working Group
-      have contributed their time and valuable comments to shaping these guidelines.</p>
+    <h2 id="h2_acknowledgements" role="heading" aria-level="1"><span class="secno">B. </span>Agradecimentos</h2>
+    <p>Os membros do Grupo de Trabalho Internacionalização e ex-CEO do Grupo de Trabalho
+      contribuíram seu tempo e comentários valiosos para moldar essas diretrizes.</p>
   </section>
 
 </body>
